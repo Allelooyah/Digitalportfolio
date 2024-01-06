@@ -1,0 +1,87 @@
+<html>
+<head>
+<title>your Name-portfolio</title>
+<style>
+body
+{
+font-family:"Times New Roman",serif;
+margin:0;
+padding:0;
+background-color:#f0f0f0;
+}
+header
+{
+background-color:#333;
+color:#fff;
+text-align:center;
+padding:2rem 0;
+position:relative;
+}
+.header-content h1
+{
+font-size:2.5rem;
+}
+.profile-picture{
+width:50px;
+height:100px;
+border-radius:50%;
+object-fit:cover;
+position:absolute;
+top:75px;
+left:75px;
+}
+footer{
+text-align:center;
+padding:1rem 0;
+background-color:#333;
+color:#fff;
+}
+</style>
+</head>
+<body>
+<header>
+<div class:"header-content">
+<img src="happy.jpg"alt="your profile picture" class="profile-picture">
+<h1> Sterly Rose.S</h1>
+<p> I'm BCA student</p>
+</div>
+</header>
+<p class="header">Education:</p>
+<ul>
+<li>School:Vedavyasa Matric Higher Secondary School,vellicode.</li>
+<li> College:Nesamony Memorial Christian College,Marthandam.</li>
+</ul>
+<p class="header">Interest:</p>
+<ul>
+<li>Computer<li>Drawing</li>
+</ul>
+<p class="head">Skills:</p>
+<ul>
+<li>Web Design with HTML&CSS</li>
+</ul>
+<p class="head">Extracurriculars:</p>
+<ul>
+<li>Red Cross</li>
+</ul>
+</div>
+<footer>
+<center>
+<p>&copy;2023 Sterly Rose.S</p>
+</center>
+</footer>
+<script>
+document querySelectorAll('a[href^="#"]').forEach(anchor=>{
+anchor addEventListener('click',function(e){
+e.preventDefault();
+const targetID=this.getAttribute('href'). Substring(1);
+const targetElement=document getElementById(targetId);
+if(targetElement){
+window.scrollTo({
+top targetElementoffsetTop;behaviour 'smooth';
+});
+}
+});
+});
+</script>
+</body>
+</html>
